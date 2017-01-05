@@ -70,5 +70,6 @@ AGG_data <- melt(tidy_data, id=ids, measure.vars=measure_vars)
 tidy_data_1 <- dcast(AGG_data, Activities + Subject ~ variable, mean)
 #write.csv(tidy_data_1,"tidy_data_mean.csv")
 write.table(tidy_data_1,"tidy_data_mean_rownames.csv",sep=",",row.name=FALSE)
+write.table(tidy_data_1,"tidy_data_mean_rownames.txt",sep=",",row.name=FALSE)
 
 
